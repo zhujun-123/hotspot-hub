@@ -3,16 +3,24 @@
     "enabled": true,
     "chatId": "YOUR_TELEGRAM_CHAT_ID",
     "cooldown": 60,
-    "template": "markdown"
+    "comment": "Telegram 推送配置，获取 Chat ID: 向 @userinfobot 发送消息"
   },
   "wechat": {
-    "enabled": false,
-    "sendKey": "YOUR_SERVER_CHAN_KEY",
-    "cooldown": 300
+    "enabled": true,
+    "sendKey": "YOUR_SERVERCHAN_SENDKEY",
+    "cooldown": 300,
+    "comment": "微信推送配置，获取 SendKey: https://sct.ftqq.com/"
   },
   "discord": {
     "enabled": false,
     "webhookUrl": "YOUR_DISCORD_WEBHOOK_URL",
-    "cooldown": 60
+    "cooldown": 60,
+    "comment": "Discord 推送配置(暂未实现)"
+  },
+  "pushConfig": {
+    "enableBatch": true,
+    "batchDelay": 5000,
+    "maxRetry": 3,
+    "comment": "推送策略配置"
   }
 }

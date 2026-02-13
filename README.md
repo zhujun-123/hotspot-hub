@@ -186,3 +186,36 @@ TELEGRAM_CHAT_ID="你的ChatID" node test-telegram.js
 - `demo.js` - 完整推送演示
 - `test-telegram.js` - Telegram 推送测试
 - `get-chat-id.md` - Chat ID 获取指南
+
+## 📱 微信推送
+
+### 配置 Server酱
+
+1. 访问 https://sct.ftqq.com/ 并登录
+2. 获取你的 SendKey
+3. 设置环境变量:
+   ```bash
+   export SERVERCHAN_SENDKEY="你的SendKey"
+   ```
+
+### 测试微信推送
+
+```bash
+node test-wechat.js
+```
+
+### 双通道推送
+
+同时推送到 Telegram 和 微信:
+
+```bash
+# 配置两个通道
+export TELEGRAM_CHAT_ID="你的ChatID"
+export SERVERCHAN_SENDKEY="你的SendKey"
+
+# 运行双通道推送
+node demo-dual-push.js
+```
+
+详细配置请查看 `serverchan-setup.md`
+
