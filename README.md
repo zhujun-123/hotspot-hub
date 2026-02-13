@@ -151,3 +151,38 @@ MIT © [zhujun-123](https://github.com/zhujun-123)
 ---
 
 **⭐ 如果这个项目对你有帮助,请给个 Star!**
+
+## 🧪 快速测试
+
+### 1. 获取 Telegram Chat ID
+
+查看  获取详细步骤，推荐使用 @userinfobot。
+
+### 2. 运行演示程序
+
+```bash
+# 设置 Chat ID
+export TELEGRAM_CHAT_ID="你的ChatID"
+
+# 运行演示(会推送6条热点)
+node demo.js
+```
+
+演示程序会:
+- 获取 GitHub Trending (JavaScript, 2条)
+- 获取 Hacker News Top Stories (2条)
+- 获取微博热搜 (2条)
+- 依次推送到你的 Telegram
+
+### 3. 单独测试 Telegram 推送
+
+```bash
+TELEGRAM_CHAT_ID="你的ChatID" node test-telegram.js
+```
+
+## 📂 新增文件
+
+- `src/notifier/telegram.js` - Telegram 推送模块
+- `demo.js` - 完整推送演示
+- `test-telegram.js` - Telegram 推送测试
+- `get-chat-id.md` - Chat ID 获取指南
