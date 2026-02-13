@@ -1,0 +1,51 @@
+{
+  "rsshub": {
+    "url": "http://localhost:1200",
+    "routes": [
+      {
+        "name": "微博热搜",
+        "path": "/weibo/search/hot",
+        "interval": 300,
+        "enabled": true
+      },
+      {
+        "name": "知乎热榜",
+        "path": "/zhihu/hotlist",
+        "interval": 600,
+        "enabled": true
+      },
+      {
+        "name": "B站热门",
+        "path": "/bilibili/hot-search",
+        "interval": 600,
+        "enabled": true
+      },
+      {
+        "name": "36氪快讯",
+        "path": "/36kr/newsflashes",
+        "interval": 900,
+        "enabled": true
+      }
+    ]
+  },
+  "github": {
+    "enabled": true,
+    "languages": ["javascript", "python", "go", "rust", "typescript"],
+    "interval": 3600
+  },
+  "hackernews": {
+    "enabled": true,
+    "topStories": 30,
+    "interval": 1800
+  },
+  "customRSS": {
+    "enabled": true,
+    "feeds": [
+      {
+        "name": "V2EX最热",
+        "url": "https://www.v2ex.com/index.xml",
+        "interval": 1800
+      }
+    ]
+  }
+}

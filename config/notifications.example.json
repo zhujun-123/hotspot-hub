@@ -1,0 +1,18 @@
+{
+  "telegram": {
+    "enabled": true,
+    "chatId": "YOUR_TELEGRAM_CHAT_ID",
+    "cooldown": 60,
+    "template": "markdown"
+  },
+  "wechat": {
+    "enabled": false,
+    "sendKey": "YOUR_SERVER_CHAN_KEY",
+    "cooldown": 300
+  },
+  "discord": {
+    "enabled": false,
+    "webhookUrl": "YOUR_DISCORD_WEBHOOK_URL",
+    "cooldown": 60
+  }
+}

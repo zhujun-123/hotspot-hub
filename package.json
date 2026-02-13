@@ -1,0 +1,33 @@
+{
+  "name": "hotspot-hub",
+  "version": "1.0.0",
+  "description": "🔥 热点订阅推送平台 - 聚合微博/知乎/GitHub/Hacker News 等热榜",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.js",
+    "dev": "node --watch src/main.js",
+    "collector": "node src/scheduler.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hotspot",
+    "rss",
+    "telegram",
+    "wechat",
+    "github-trending",
+    "hacker-news"
+  ],
+  "author": "zhujun-123",
+  "license": "MIT",
+  "dependencies": {
+    "rss-parser": "^3.13.0",
+    "node-cron": "^3.0.3",
+    "ioredis": "^5.4.1",
+    "better-sqlite3": "^11.7.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2"
+  }
+}
